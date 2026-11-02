@@ -1,0 +1,17 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Everything in this repo is JavaScript, Markdown or JSON written on both
+# Windows and Linux. Pin the line ending so a contributor on Windows does not
+# rewrite every file.
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+
+# Credentials and local state must never be normalised or diffed as text.
+.msal-cache.json   -text
+.access-token.txt  -text
+.id-map.json       -text
+

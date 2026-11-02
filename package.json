@@ -1,0 +1,53 @@
+{
+  "name": "mcp-server-onenote",
+  "version": "3.7.0",
+  "description": "OneNote MCP server: Markdown-native reading and writing, table editing, MathML, device-code auth",
+  "type": "module",
+  "main": "onenote-mcp.mjs",
+  "bin": {
+    "onenote-mcp": "onenote-mcp.mjs"
+  },
+  "scripts": {
+    "start": "node onenote-mcp.mjs",
+    "auth": "node authenticate.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^3.5.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "dotenv": "^16.0.0",
+    "jsdom": "^26.0.0",
+    "marked": "^18.0.11",
+    "zod": "^4.6.6"
+  },
+  "keywords": [
+    "mcp",
+    "onenote",
+    "modelcontextprotocol",
+    "device-code-auth"
+  ],
+  "author": "violet10B",
+  "contributors": [
+    "danosb (https://github.com/danosb/onenote-mcp)",
+    "Zubeid Hendricks (https://github.com/ZubeidHendricks/azure-onenote-mcp-server)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/violet10B/1note-mcp.git"
+  },
+  "homepage": "https://github.com/violet10B/1note-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/violet10B/1note-mcp/issues"
+  },
+  "files": [
+    "onenote-mcp.mjs",
+    "authenticate.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
